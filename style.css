@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* header */
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 100%;
+  }
+  
+  .time-call {
+    text-align: end;
+  }
+  
+  .time-call p {
+    margin: 10px 0;
+  }
+  
+  .time-call p a {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+
+
+
+/* Navigation menu */
+.nav-bar {
+    background-color: #1e83dd;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    overflow: hidden;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: red;
+}
+
+
+
+/* banner */
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* contact us */
+.cont-form {
+    background-color: #16376c;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.contact {
+    margin: 10px 0px;
+}
+
+.form {
+    display: flex;
+    margin: 10px 50px;
+}
+
+.form input {
+    margin: 0px 40px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    /* border: none; */
+    background-color: #16376c;
+}
+
+.button {
+    background-color: red !important;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+/* Media query */
+@media (max-width: 768px) {
+
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .logo,
+      .time-call {
+        width: 100%;
+        text-align: center;
+      }
+    
+      .time-call {
+        margin-top: 20px;
+      }
+
+    .container {
+        width: 100%;
+    }
+    
+    .navigation ul {
+        flex-wrap: wrap;
+    }
+    
+    .navigation li {
+        width: 50%;
+    }
+    
+    .navigation li a {
+        padding: 10px;
+    }
+
+    .image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        }
+
+    .container {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .form input {
+        margin: 10px 0px;
+    }
+}
